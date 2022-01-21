@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/edc2ca84e9.js" crossorigin="anonymous"></script>
+
     <title>N. Klein</title>
 </head>
 <body>
@@ -42,16 +52,58 @@
             </div>
         </div>
     </header>
-    <section id="helloSection">
-        <div class="mainCont">
-            <div class="helloCont">
+    <section id="helloWorldSection">
+        <div class="landingCont">
+            <div id="helloCont">
                 <h1>Hello World</h1>
             </div>
             <div class="nextBtnCont">
-                <a href="#" id="nextSectionBtn">
+                <a href="#aboutMeSection" id="nextSectionBtn">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
+        </div>
+    </section>
+    <section id="aboutMeSection">
+        <div class="container cont1">
+            <div class="col profImgTextCont">
+                <div class="textCont">
+                    <p><i class="fas fa-hand-point-left"></i> That's my face!</p>
+                </div>
+                <div class="profileImgCont">
+                    <img src="images/IMG_5247.jpg" alt="">
+                </div>
+            </div>
+            <div class="col aboutMeCont">
+                <h2>About Me</h2>
+                <div class="aboutMe">
+                    <p>
+                        I'm a person that loves fun times, cats, and adventures with friends. In the beginning of 2021, I helped found a nonprofit in my hometown to support and mentor at-risk youth. Our name is <a href="https://www.AnaheimYoutopia.com">Anaheim Youtopia</a> (AY)! Currently, I'm the Exectuive Director and Treasurer of AY in my spare time. 
+                
+                        I also love learning languages (which is how I got started in front-end web development)! Since 2017, I've been studying five spoken languages:
+                        <ul>
+                            <li>French</li>
+                            <li>Spanish</li>
+                            <li>German</li>
+                            <li>Italian</li>
+                            <li>Japanese</li>
+                        </ul>  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container cont2">
+            <h2>My Coding Skills</h2>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>React/JSX</button>
+            <button>jQuery</button>
+            <button>Node.js</button>
+            <button>Bootstrap</button>
+            <button>Java</button>
         </div>
     </section>
 </body>

@@ -1,11 +1,11 @@
 :root {
   --green: rgb(123, 255, 0);
+  font-family: "Press Start 2P", cursive;
 }
 body {
   margin: 100px;
   background-color: black;
   /* padding: 100px; */
-  font-family: monospace;
 }
 /* .imgCont {
   background-color: pink;
@@ -80,8 +80,23 @@ input:checked ~ .menuContent {
 /* #helloSection {
   background-color: pink;
 } */
-.mainCont {
-  background-image: url(https://alifeofproductivity.com/wp-content/uploads/2016/01/Computer.jpg);
+.landingCont {
+  height: 75vh;
+  display: flex;
+  border-radius: 10px;
+  margin: 30px auto;
+  overflow: hidden;
+  background-image: url(images/ComputerScreen.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* .cont1 {
+  background-image: url(images/ComputerScreen.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -90,11 +105,9 @@ input:checked ~ .menuContent {
   flex-direction: column;
   justify-content: space-evenly;
   height: 75vh;
-  /* width: 100%; */
-  margin: 30px auto;
-  border-radius: 10px;
-}
-.mainCont h1 {
+  width: 100%;
+} */
+#helloCont h1 {
   color: var(--green);
 }
 .fa-chevron-down {
@@ -124,6 +137,66 @@ input:checked ~ .menuContent {
 #nextSectionBtn:active {
   -webkit-transform: translateY(8px);
   transform: translateY(8px);
+}
+.container {
+  height: 75vh;
+  display: flex;
+  border-radius: 10px;
+  margin: 30px auto;
+  overflow: hidden;
+  border: 3px solid var(--green);
+}
+.cont1 {
+  box-shadow: 20px 20px white;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+.profImgTextCont {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--green); */
+  /* margin: 30px; */
+}
+/* .profileImgCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.textCont {
+  position: absolute;
+  bottom: 45%;
+  left: 65%;
+  background-color: black;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  /* height: 175px; */
+  width: 150px;
+  color: var(--green);
+  font-size: 20px;
+  border: 3px solid var(--green);
+  /* padding: 10px; */
+}
+.textCont p {
+  margin: 10px;
+}
+.profileImgCont img {
+  width: 300px;
+  border: 15px solid white;
+  border-radius: 10px;
+}
+.aboutMeCont {
+  background-color: var(--green);
+}
+.cont2 {
+  box-shadow: -20px 20px white;
 }
 @media screen and (max-width: 1135px) {
   body {
