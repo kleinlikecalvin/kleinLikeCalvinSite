@@ -81,7 +81,7 @@ input:checked ~ .menuContent {
   background-color: pink;
 } */
 .landingCont {
-  height: 75vh;
+  min-height: 500px;
   display: flex;
   border-radius: 10px;
   margin: 30px auto;
@@ -139,10 +139,10 @@ input:checked ~ .menuContent {
   transform: translateY(8px);
 }
 .container {
-  height: 75vh;
+  min-height: 500px;
   display: flex;
   border-radius: 10px;
-  margin: 30px auto;
+  margin: 100px auto;
   overflow: hidden;
   border: 3px solid var(--green);
 }
