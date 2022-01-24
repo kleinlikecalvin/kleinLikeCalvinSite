@@ -19,8 +19,8 @@
     <title>N. Klein</title>
 </head>
 <body>
-    <header>
-        <div class="imgCont">
+    <nav>
+        <div class="logoCont">
             <img src="https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png" alt="" id="logo">
         </div>
         <div class="collapsableMenu">
@@ -31,27 +31,25 @@
             <div class="menuContent">
                 <ul>
                     <li>
-                        <a href="#">Hi!</a>
+                        <a href="#aboutMeSection">About Me</a>
                     </li>
                     <li>
-                        <a href="#">My Skills</a>
+                        <a href="#mySkillsSection">My Skills</a>
                     </li>
                     <li>
-                        <a href="#">About Me</a>
+                        <a href="#p1Section">Project 1</a>
                     </li>
                     <li>
-                        <a href="#">Project 1</a>
+                        <a href="#p2Section">Project 2</a>
                     </li>
                     <li>
-                        <a href="#">Project 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Project 3</a>
+                        <a href="#p3Section">Project 3</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </header>
+    </nav>
+    
     <section id="helloWorldSection">
         <div class="landingCont">
             <div id="helloCont">
@@ -64,23 +62,14 @@
             </div>
         </div>
     </section>
-    <section id="aboutMeSection">
+
+    <section id="aboutMeSection">          
         <div class="container cont1">
-            <div class="col profImgTextCont">
-                <div class="textCont">
-                    <p><i class="fas fa-hand-point-left"></i> That's my face!</p>
-                </div>
-                <div class="profileImgCont">
-                    <img src="images/IMG_5247.jpg" alt="">
-                </div>
-            </div>
-            <div class="col aboutMeCont">
+            <div class="aboutMeCont">
                 <h2>About Me</h2>
                 <div class="aboutMe">
                     <p>
-                        I'm a person that loves fun times, cats, and adventures with friends. In the beginning of 2021, I helped found a nonprofit in my hometown to support and mentor at-risk youth. Our name is <a href="https://www.AnaheimYoutopia.com">Anaheim Youtopia</a> (AY)! Currently, I'm the Exectuive Director and Treasurer of AY in my spare time. 
-                
-                        I also love learning languages (which is how I got started in front-end web development)! Since 2017, I've been studying five spoken languages:
+                        I'm a person that loves fun times, cats, and adventures with friends. In the beginning of 2021, I helped found a nonprofit in my hometown to support and mentor at-risk youth. Our name is <a href="https://www.AnaheimYoutopia.com">Anaheim Youtopia</a> (AY)! Currently, I'm the Exectuive Director and Treasurer of AY in my spare time. I also love learning languages (which is how I got started in front-end web development)! Since 2017, I've been studying five spoken languages:
                         <ul>
                             <li>French</li>
                             <li>Spanish</li>
@@ -92,18 +81,29 @@
                 </div>
             </div>
         </div>
+        <div class="col profImgTextCont">
+            <div class="textCont">
+                <p><i class="fas fa-hand-point-left"></i> That's my face!</p>
+            </div>
+            <div class="profileImgCont">
+                <img src="images/IMG_5247.jpg" alt="">
+            </div>
+        </div>    
     </section>
-    <section>
-        <div class="container cont2">
+
+    <section id="mySkillsSection">
+        <div class="container cont2 col">
             <h2>My Coding Skills</h2>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JS</button>
-            <button>React/JSX</button>
-            <button>jQuery</button>
-            <button>Node.js</button>
-            <button>Bootstrap</button>
-            <button>Java</button>
+            <div class="confettiBtnsCont">
+                <button class="confettiBtn">HTML</button>
+                <button class="confettiBtn">CSS</button>
+                <button class="confettiBtn">JS</button>
+                <button class="confettiBtn">React/JSX</button>
+                <button class="confettiBtn">jQuery</button>
+                <button class="confettiBtn">Node.js</button>
+                <button class="confettiBtn">Bootstrap</button>
+                <button class="confettiBtn">Java</button>
+            </div>
         </div>
     </section>
 </body>

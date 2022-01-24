@@ -1,65 +1,55 @@
 :root {
   --green: rgb(123, 255, 0);
-  font-family: "Press Start 2P", cursive;
+  --font: "Press Start 2P", cursive;
+  font-family: var(--font);
+  font-size: 16px;
+  color: var(--green);
+  scroll-behavior: smooth;
 }
 body {
   margin: 100px;
   background-color: black;
-  /* padding: 100px; */
 }
-/* .imgCont {
-  background-color: pink;
-} */
-.imgCont img {
+/* HEADER */
+nav {
+  /* background-color: white; */
+  justify-content: center;
+  position: relative;
+}
+.logoCont img {
   max-width: 100px;
-  /* overflow: hidden; */
 }
 .collapsableMenu {
-  background-color: var(--green);
   position: absolute;
-  right: 100px;
-  top: 100px;
-  padding: 10px 10px 10px 20px;
-  border-radius: 10px;
-  /* border-bottom: 1px solid #cde700; */
-  /* box-shadow: 1px 2px 3px; */
+  right: 0;
+  top: 0;
 }
-input {
+.collapsableMenu input {
   display: none;
 }
-/* input:checked {
-  display: none;
-} */
-/* Toggle Effect */
-/* input:checked ~ label {
-  background-image: url(close.png);
-} */
-input:checked ~ .menuContent {
+.collapsableMenu input:checked ~ .menuContent {
   max-height: 100%;
 }
 .collapsableMenu label {
-  display: block;
-  /* height: 50px; */
   cursor: pointer;
-  /* background: url(menu.png) no-repeat left center; */
   float: right;
   padding-left: 10px;
 }
-.fa-hamburger {
-  color: white;
+.collapsableMenu .fa-hamburger {
+  color: var(--green);
   font-size: 40px;
   transition: 0.5s;
 }
-.fa-hamburger:hover {
-  color: black;
+.collapsableMenu .fa-hamburger:hover {
+  color: white;
   transition: 0.5s;
 }
-.menuContent {
+.collapsableMenu .menuContent {
   max-height: 0;
   overflow: hidden;
-  padding: 40px 0 0 0;
-  /* font-family: "Oswald", sans-serif; */
-  /* padding: 0 0 0 50px; */
+}
+.menuContent {
+  margin: 0;
 }
 .menuContent ul {
   list-style-type: none;
@@ -70,133 +60,147 @@ input:checked ~ .menuContent {
   padding: 0 10px 10px 0;
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: var(--green);
   transition: 0.5s;
 }
 .menuContent a:hover {
   color: white;
   transition: 0.5s;
 }
-/* #helloSection {
-  background-color: pink;
-} */
+/* SECTIONS */
+section {
+  padding: 10% 0 10% 0;
+  align-items: center;
+}
+/* HELLO WORLD LANDING */
 .landingCont {
+  height: 80vh;
   min-height: 500px;
   display: flex;
   border-radius: 10px;
-  margin: 30px auto;
-  overflow: hidden;
+  /* margin: 30px auto; */
   background-image: url(images/ComputerScreen.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-evenly;
 }
-/* .cont1 {
-  background-image: url(images/ComputerScreen.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 75vh;
-  width: 100%;
-} */
 #helloCont h1 {
   color: var(--green);
 }
-.fa-chevron-down {
+.nextBtnCont .fa-chevron-down {
   color: var(--green);
   font-size: 40px;
   transition: 0.5s;
 }
-.fa-chevron-down:hover {
+.nextBtnCont .fa-chevron-down:hover {
   color: white;
   transition: 0.5s;
 }
 #nextSectionBtn {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 #nextSectionBtn:hover,
 #nextSectionBtn:focus,
 #nextSectionBtn:active {
-  -webkit-transform: translateY(8px);
   transform: translateY(8px);
 }
+/* CONTAINERS AND COLUMNS */
 .container {
   min-height: 500px;
+  width: 50%;
   display: flex;
   border-radius: 10px;
-  margin: 100px auto;
-  overflow: hidden;
   border: 3px solid var(--green);
-}
-.cont1 {
-  box-shadow: 20px 20px white;
+  padding: 30px;
 }
 .col {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 20px;
+}
+.container h2 {
+  color: white;
+}
+
+/* ABOUT ME */
+#aboutMeSection {
+  display: flex;
+  justify-content: space-evenly;
 }
 .profImgTextCont {
-  display: flex;
   position: relative;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* background-color: var(--green); */
-  /* margin: 30px; */
 }
-/* .profileImgCont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .textCont {
   position: absolute;
   bottom: 45%;
-  left: 65%;
+  left: 75%;
   background-color: black;
   text-align: center;
   font-family: "Roboto", sans-serif;
   border-radius: 30px;
-  /* height: 175px; */
   width: 150px;
   color: var(--green);
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
   border: 3px solid var(--green);
-  /* padding: 10px; */
 }
 .textCont p {
   margin: 10px;
 }
+.profileImgCont {
+  text-align: right;
+  border: 3px solid var(--green);
+  border-radius: 10px;
+  box-shadow: -20px 20px white;
+  overflow: hidden;
+}
 .profileImgCont img {
   width: 300px;
-  border: 15px solid white;
-  border-radius: 10px;
 }
-.aboutMeCont {
-  background-color: var(--green);
-}
-.cont2 {
+.cont1 {
   box-shadow: -20px 20px white;
+}
+/* MY SKILLS SECTION */
+.cont2 {
+  box-shadow: 20px 20px white;
+}
+.confettiBtnsCont {
+  text-align: center;
+}
+.confettiBtn {
+  border: none;
+  background-color: var(--green);
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--font);
+  margin: 10px;
+  box-shadow: inset -2px -2px black, 5px 5px white;
+  transition: 0.3s;
+  padding: 10px;
+}
+.confettiBtn:hover {
+  background-color: black;
+  color: var(--green);
+  border: 3px solid var(--green);
+  transform: scale(120%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.confettiBtn:active {
+  border: 3px solid black;
+  background-color: black;
+  color: var(--green);
+  box-shadow: inset 2px 2px var(--green), 5px 5px white;
+  /* transition: 0.3s; */
 }
 @media screen and (max-width: 1135px) {
   body {
