@@ -196,21 +196,31 @@ button:active {
 }
 /* RECENT PROJECTS */
 .p1Cont {
+  min-height: 400px;
   box-shadow: -10px 10px white;
   justify-content: space-evenly;
+  align-items: center;
+}
+.projectCont {
+  transform: scale(110%);
 }
 .projectCont a {
+  max-width: 400px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
   border: 3px solid white;
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.3s;
+  background-color: white;
+  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
+  background-position: center;
+  background-size: contain;
 }
 .projectCont a:hover {
-  transform: 150%;
-}
-.projectCont img {
-  max-width: 300px;
-  min-width: 200px;
-  background-color: white;
+  transition: 0.3s;
+  padding: 10px;
 }
 @media screen and (max-width: 1135px) {
   body {
