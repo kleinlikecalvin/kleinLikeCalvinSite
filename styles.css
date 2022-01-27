@@ -173,7 +173,8 @@ section {
 .confettiBtnsCont {
   text-align: center;
 }
-.confettiBtn {
+/* BUTTONS */
+button {
   border: none;
   background-color: var(--green);
   color: black;
@@ -185,23 +186,30 @@ section {
   transition: 0.3s;
   padding: 10px;
 }
-.confettiBtn:hover {
+button:hover {
   background-color: rgb(195, 255, 139);
   cursor: pointer;
 }
-.confettiBtn:active {
+button:active {
   box-shadow: inset -2px -2px rgb(195, 255, 139), 0 2px white;
   transition: 0.1s;
 }
 /* RECENT PROJECTS */
 .p1Cont {
   box-shadow: -10px 10px white;
+  justify-content: space-evenly;
 }
-.projectCont {
-  border: 1px solid white;
+.projectCont a {
+  border: 3px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.projectCont a:hover {
+  transform: 150%;
 }
 .projectCont img {
-  width: 150px;
+  max-width: 300px;
+  min-width: 200px;
   background-color: white;
 }
 @media screen and (max-width: 1135px) {
