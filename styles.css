@@ -12,7 +12,6 @@ body {
 }
 /* HEADER */
 nav {
-  /* background-color: white; */
   justify-content: center;
   position: relative;
 }
@@ -78,7 +77,6 @@ section {
   min-height: 500px;
   display: flex;
   border-radius: 10px;
-  /* margin: 30px auto; */
   background-image: url(images/ComputerScreen.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -114,8 +112,6 @@ section {
 }
 /* CONTAINERS AND COLUMNS */
 .container {
-  min-height: 500px;
-  width: 50%;
   display: flex;
   border-radius: 10px;
   border: 3px solid var(--green);
@@ -130,9 +126,14 @@ section {
 }
 
 /* ABOUT ME */
-#aboutMeSection {
+.wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.aboutMeCont {
+  min-height: 500px;
+  width: 50%;
+  box-shadow: -10px 10px white;
 }
 .profImgTextCont {
   position: relative;
@@ -159,18 +160,15 @@ section {
   text-align: right;
   border: 3px solid var(--green);
   border-radius: 10px;
-  box-shadow: -20px 20px white;
+  box-shadow: -10px 10px white;
   overflow: hidden;
 }
 .profileImgCont img {
   width: 300px;
 }
-.cont1 {
-  box-shadow: -20px 20px white;
-}
 /* MY SKILLS SECTION */
-.cont2 {
-  box-shadow: 20px 20px white;
+.mySkillsCont {
+  box-shadow: 10px 10px white;
 }
 .confettiBtnsCont {
   text-align: center;
@@ -183,24 +181,28 @@ section {
   font-size: 16px;
   font-family: var(--font);
   margin: 10px;
-  box-shadow: inset -2px -2px black, 5px 5px white;
+  box-shadow: inset -2px -2px black, 0 4px white;
   transition: 0.3s;
   padding: 10px;
 }
 .confettiBtn:hover {
-  background-color: black;
-  color: var(--green);
-  border: 3px solid var(--green);
-  transform: scale(120%);
+  background-color: rgb(195, 255, 139);
   cursor: pointer;
-  transition: 0.3s;
 }
 .confettiBtn:active {
-  border: 3px solid black;
-  background-color: black;
-  color: var(--green);
-  box-shadow: inset 2px 2px var(--green), 5px 5px white;
-  /* transition: 0.3s; */
+  box-shadow: inset -2px -2px rgb(195, 255, 139), 0 2px white;
+  transition: 0.1s;
+}
+/* RECENT PROJECTS */
+.p1Cont {
+  box-shadow: -10px 10px white;
+}
+.projectCont {
+  border: 1px solid white;
+}
+.projectCont img {
+  width: 150px;
+  background-color: white;
 }
 @media screen and (max-width: 1135px) {
   body {
