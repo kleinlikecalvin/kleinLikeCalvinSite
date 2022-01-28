@@ -78,17 +78,43 @@ section {
   height: 80vh;
   min-height: 500px;
   display: flex;
-  border-radius: 10px;
   background-image: url(images/ComputerScreen.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  text-align: center;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  border: 2px solid white;
 }
-#helloCont h1 {
+#helloCont {
+  width: 280px;
+  text-align: center;
+}
+.typewriter h1 {
   color: var(--green);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--green); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.5s steps(25, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 /* NEXT SECTION ARROWS */
 .nextBtnCont .fa-chevron-down {
