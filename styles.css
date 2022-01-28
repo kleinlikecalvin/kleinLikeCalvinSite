@@ -9,6 +9,7 @@
 body {
   margin: 100px;
   background-color: black;
+  line-height: 20px;
 }
 /* HEADER */
 nav {
@@ -68,8 +69,9 @@ nav {
 }
 /* SECTIONS */
 section {
-  padding: 10% 0 10% 0;
+  margin: 10% 0 10% 0;
   align-items: center;
+  padding: 10px 0 10px 0;
 }
 /* HELLO WORLD LANDING */
 .landingCont {
@@ -88,6 +90,7 @@ section {
 #helloCont h1 {
   color: var(--green);
 }
+/* NEXT SECTION ARROWS */
 .nextBtnCont .fa-chevron-down {
   color: var(--green);
   font-size: 40px;
@@ -116,6 +119,7 @@ section {
   border-radius: 10px;
   border: 3px solid var(--green);
   padding: 30px;
+  margin-bottom: 20px;
 }
 .col {
   display: flex;
@@ -128,12 +132,19 @@ section {
 /* ABOUT ME */
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .aboutMeCont {
   min-height: 500px;
   width: 50%;
   box-shadow: -10px 10px white;
+}
+.aboutMe a {
+  text-decoration: none;
+  color: white;
+}
+.aboutMe a:hover {
+  color: var(--green);
 }
 .profImgTextCont {
   position: relative;
@@ -195,32 +206,81 @@ button:active {
   transition: 0.1s;
 }
 /* RECENT PROJECTS */
-.p1Cont {
+.allProjectConts {
   min-height: 400px;
-  box-shadow: -10px 10px white;
   justify-content: space-evenly;
   align-items: center;
 }
-.projectCont {
-  transform: scale(110%);
+.p1 {
+  box-shadow: -10px 10px white;
 }
-.projectCont a {
-  max-width: 400px;
-  max-height: 300px;
-  min-width: 200px;
-  min-height: 200px;
+.p2 {
+  box-shadow: 10px 10px white;
+}
+.p3 {
+  box-shadow: -10px 10px white;
+}
+.projectCont {
+  transition: 0.3s;
+  text-align: center;
+}
+.projectCont:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+}
+.imgA {
+  min-width: 250px;
+  min-height: 250px;
   border: 3px solid white;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s;
   background-color: white;
+}
+/* I WILL ADD AN IMAGE THEN POSITION IT ACCORDINGLY? */
+#aCode1,
+#aPage1,
+#aRead1 {
   background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
   background-position: center;
   background-size: contain;
 }
-.projectCont a:hover {
-  transition: 0.3s;
-  padding: 10px;
+#aCode2,
+#aPage2,
+#aRead2 {
+  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
+  background-position: center;
+  background-size: contain;
+}
+#aCode3,
+#aPage3,
+#aRead3 {
+  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
+  background-position: center;
+  background-size: contain;
+}
+.projectCont button a {
+  text-decoration: none;
+  color: black;
+}
+/* TO TOP HREF */
+.fa-chevron-up {
+  font-size: 40px;
+}
+#toTop {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+#toTop:hover {
+  color: var(--green);
+  transform: translateY(-8px);
 }
 @media screen and (max-width: 1135px) {
   body {
