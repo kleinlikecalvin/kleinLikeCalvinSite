@@ -14,14 +14,18 @@ const hello = document.getElementById("hello");
 
 
 // hello.innerHTML = langsArray[1];
-document.onscroll = checkView;
+document.addEventListener("scroll", checkView);
 
-function checkView(event){
+function checkView(){
     // console.log(event);
-    const section = event.target.getElementById("helloWorldSection");
-    const domRect = section.getBoundingClientRect();
+    // const section = document.getElementById("helloWorldSection");
+    const domRect = hello.getBoundingClientRect();
     console.log(domRect);
-    // if(domRect.top < 100 && domRect.top > -420 ) {
+    console.log("element is ABOVE or within viewport:", domRect.bottom > 0);
+    console.log("element is BELOW or within viewport:", domRect.top < window.innerHeight);
+    console.log("element is within viewport");
+
+    // if(domRect.bottom < 0 && domRect.top > -420 ) {
     //     console.log("I'm here");
     //     // interval;
     // }else{
