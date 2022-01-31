@@ -78,13 +78,13 @@ section {
   height: 80vh;
   min-height: 500px;
   display: flex;
-  background-image: url(images/ComputerScreen.jpeg);
+  background-image: url(images/ComputerScreen.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border: 2px solid white;
 }
 #helloCont {
