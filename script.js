@@ -1,61 +1,44 @@
-const langsArray = ["Hello World", "Salut Monde", "Hola Mundo", "Hallo Welt", "Ciao Mondo", "こんにちは世界"];
-// console.log(langsArray.length);
-// const interval = setInterval(typeLang, 500);
-
-// console.log(domRect);
+const greetings = ["Hello World", "Salut Monde", "Hola Mundo", "Hallo Welt", "Ciao Mondo", "こんにちは世界"];
 const hello = document.getElementById("hello");
+const speed = 1000;
+let u = 0;
+greetings.forEach((greeting, i) => {
+    console.log(greeting);
+    // setTimeout(() => {
+    //     // hello.innerHTML = greeting;
+    // }, i * 3000);
+    setTimeout(typeWriter(greeting), i * 3000);
+});
+function typeWriter(greeting) {
+            if (u < greeting.length) {
+                hello.innerHTML += greeting.charAt(u);
+                u++;
+                setTimeout(typeWriter(), speed);
+            }
+        }
 
-// for (var key in domRect) {
-//   if(typeof domRect[key] !== 'function') {
-//     let para  = `${ key } : ${ domRect[key] }`;
-//     console.log(para);
+
+// function typeWriter(greeting) {
+//   if (i < greeting.length) {
+//     hello.innerHTML += greeting.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
 //   }
 // }
 
+// document.addEventListener("scroll", checkView);
 
-// hello.innerHTML = langsArray[1];
-document.addEventListener("scroll", checkView);
+// function checkView(){
 
-function checkView(){
-    // console.log(event);
-    // const section = document.getElementById("helloWorldSection");
-    const domRect = hello.getBoundingClientRect();
-    console.log(domRect);
-    console.log("element is ABOVE or within viewport:", domRect.bottom > 0);
-    console.log("element is BELOW or within viewport:", domRect.top < window.innerHeight);
-    console.log("element is within viewport");
+//     const domRect = hello.getBoundingClientRect();
 
-    // if(domRect.bottom < 0 && domRect.top > -420 ) {
-    //     console.log("I'm here");
-    //     // interval;
-    // }else{
-    //     // clearInterval(interval);
-    //     console.log("it's out of my control");
-    // }
-};
+//     if(domRect.bottom > 0 && domRect.top < window.innerHeight ) {
 
+//         console.log("I'm here");
+//         typeLang();
 
+//     } else {
 
-// function typeLang() {
-//     for(let i = 0; i < 6; i++) {
-//         // console.log(langsArray.length);
-//         // hello.classList.add("typewriter");
-//         // console.log(i);
-//         // console.log(hello.style.top);
-//         // console.log(domRect);
-//         let string = langsArray[i];
-//         console.log(string);
-//         // hello.innerHTML = string;
+//         console.log("it's out of my control");
 //     }
-// }
-
-
-
-
-// clearInterval(interval);
-
-    // for(let i = 0; i <= langsArray.length; i++) {
-    //     // console.log(hello);
-    //     // hello.classList.add("typewriter");
-    //     hello.innerHTML = langsArray[i];
-    // }
+// };

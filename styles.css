@@ -85,13 +85,12 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  border: 2px solid white;
 }
 #helloCont {
   width: 280px;
   text-align: center;
 }
-.typewriter h1 {
+.typewriter {
   color: var(--green);
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid var(--green); /* The typwriter cursor */
