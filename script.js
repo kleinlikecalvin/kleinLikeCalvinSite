@@ -9,22 +9,8 @@ greetings.forEach((greeting, i) => {
     // }, i * 3000);
     setTimeout(typeWriter(greeting), i * 3000);
 });
-function typeWriter(greeting) {
-            if (u < greeting.length) {
-                hello.innerHTML += greeting.charAt(u);
-                u++;
-                setTimeout(typeWriter(), speed);
-            }
-        }
 
 
-// function typeWriter(greeting) {
-//   if (i < greeting.length) {
-//     hello.innerHTML += greeting.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
 
 // document.addEventListener("scroll", checkView);
 
