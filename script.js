@@ -1,30 +1,29 @@
-const greetings = ["Hello World", "Salut Monde", "Hola Mundo", "Hallo Welt", "Ciao Mondo", "こんにちは世界"];
 const hello = document.getElementById("hello");
 const speed = 1000;
 let u = 0;
-greetings.forEach((greeting, i) => {
-    console.log(greeting);
-    // setTimeout(() => {
-    //     // hello.innerHTML = greeting;
-    // }, i * 3000);
-    setTimeout(typeWriter(greeting), i * 3000);
-});
 
+const greetings = [
+  "Hello World",
+  "Salut Monde",
+  "Hola Mundo",
+  "Hallo Welt",
+  "Ciao Mondo",
+  "こんにちは世界",
+].reduce((acc, curr) => {
+  for (let i = 1; i <= curr.length; i++) {
+    acc.push(curr.slice(0, i));
+  }
+  acc.push(curr);
+  acc.push(curr);
+  acc.push(curr);
+  return acc;
+}, []);
+console.log(greetings);
 
+let typewriterIndex = 0;
+function typewriter() {
+  hello.innerText = greetings[typewriterIndex];
+  typewriterIndex = (typewriterIndex + 1) % greetings.length;
+}
 
-// document.addEventListener("scroll", checkView);
-
-// function checkView(){
-
-//     const domRect = hello.getBoundingClientRect();
-
-//     if(domRect.bottom > 0 && domRect.top < window.innerHeight ) {
-
-//         console.log("I'm here");
-//         typeLang();
-
-//     } else {
-
-//         console.log("it's out of my control");
-//     }
-// };
+setInterval(typewriter, 200);
