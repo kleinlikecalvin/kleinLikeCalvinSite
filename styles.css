@@ -311,7 +311,6 @@ button:active {
   text-decoration: none;
   color: var(--green);
   font-size: 20px;
-  margin-top: 10px;
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
