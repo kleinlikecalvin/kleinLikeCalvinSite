@@ -295,6 +295,14 @@ button:active {
   text-decoration: none;
   color: black;
 }
+/* LET'S BE FRIENDS SECTION */
+.addMe {
+  justify-content: space-evenly;
+}
+.addMe a {
+  text-decoration: none;
+  color: black;
+}
 /* TO TOP HREF */
 .fa-chevron-up {
   font-size: 40px;
