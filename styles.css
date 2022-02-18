@@ -255,13 +255,27 @@ button:active {
   transition: 0.3s;
   background-color: white;
 }
-/* I WILL ADD AN IMAGE THEN POSITION IT ACCORDINGLY? */
-#aCode1,
-#aPage1,
-#aRead1 {
-  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
+/* Project 1 */
+#aCode1 {
+  background-image: url("images/ArticlePreview-Code.png");
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0d1117;
+}
+#aPage1 {
+  background-image: url("images/ArticlePreview-LiveSite.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ecf2f9;
+}
+#aRead1 {
+  background-image: url("images/ArticlePreview-README.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0d1117;
 }
 #aCode2,
 #aPage2,
