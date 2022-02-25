@@ -335,10 +335,11 @@ button:active {
     width: unset;
   }
   .textCont {
-    left: 55%;
+    left: 65%;
   }
   .profileImgCont {
     box-shadow: 10px 10px white;
+    margin: auto;
   }
   /* RECENT PROJECTS */
   .allProjectConts {
