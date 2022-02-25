@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 body {
-  margin: 100px;
+  margin: 5%;
   background-color: black;
   line-height: 20px;
 }
@@ -184,14 +184,14 @@ section {
   margin: 10px;
 }
 .profileImgCont {
-  text-align: right;
+  background-image: url(images/IMG_5247.jpg);
+  height: 400px;
+  width: 300px;
+  background-size: cover;
   border: 3px solid var(--green);
   border-radius: 10px;
   box-shadow: -10px 10px white;
   overflow: hidden;
-}
-.profileImgCont img {
-  width: 300px;
 }
 /* MY SKILLS SECTION */
 .mySkillsCont {
@@ -324,6 +324,38 @@ button:active {
 }
 @media screen and (max-width: 1135px) {
   body {
-    background-color: white;
+    background-color: grey;
+  }
+  /* ABOUT ME */
+  .wrapper {
+    flex-direction: column;
+    justify-content: unset;
+  }
+  .aboutMeCont {
+    width: unset;
+  }
+  .textCont {
+    left: 55%;
+  }
+  .profileImgCont {
+    box-shadow: 10px 10px white;
+  }
+  /* RECENT PROJECTS */
+  .allProjectConts {
+    flex-direction: column;
+  }
+  .projectCont {
+    margin: 10px;
+  }
+  /* LET'S BE FRIENDS SECTION */
+  .addMe {
+    flex-direction: column;
+  }
+  .addMe h2 {
+    text-align: center;
+  }
+  .addMe button {
+    margin: 10px auto;
+    width: 50%;
   }
 }
