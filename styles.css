@@ -199,19 +199,21 @@ section {
 }
 .confettiBtnsCont {
   text-align: center;
+  padding: 5px 0 5px 0;
 }
 /* BUTTONS */
 button {
   border: none;
+  margin: 10px;
+  padding: 10px;
   background-color: var(--green);
   color: black;
   border-radius: 10px;
   font-size: 16px;
   font-family: var(--font);
-  margin: 10px;
-  box-shadow: inset 0 -4px white;
   transition: 0.3s;
-  padding: 10px;
+  align-items: center;
+  box-shadow: 0 4px white;
 }
 button:hover {
   background-color: rgb(93, 131, 57);
@@ -220,8 +222,9 @@ button:hover {
 }
 button:active {
   background-color: var(--green);
-  box-shadow: unset;
   transition: 0.3s;
+  transform: translateY(4px);
+  box-shadow: unset;
 }
 /* RECENT PROJECTS */
 .allProjectConts {
