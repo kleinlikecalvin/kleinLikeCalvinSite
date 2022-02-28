@@ -148,7 +148,7 @@ section {
 /* ABOUT ME */
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .aboutMeCont {
   min-height: 500px;
@@ -327,6 +327,9 @@ button:active {
   body {
     background-color: black;
   }
+  h2 {
+    line-height: 28px;
+  }
   /* ABOUT ME */
   .wrapper {
     flex-direction: column;
@@ -336,11 +339,14 @@ button:active {
     width: unset;
   }
   .textCont {
-    left: 65%;
+    display: none;
   }
   .profileImgCont {
+    height: 300px;
+    width: 200px;
+    background-position: center;
     box-shadow: 10px 10px white;
-    margin: auto;
+    margin: 10px auto;
   }
   /* RECENT PROJECTS */
   .allProjectConts {
