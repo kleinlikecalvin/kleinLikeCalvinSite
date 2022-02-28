@@ -249,7 +249,7 @@ button:active {
   transform: scale(110%);
   transition: 0.3s;
 }
-.imgA {
+.aImg {
   min-width: 250px;
   min-height: 250px;
   border: 3px solid white;
@@ -257,35 +257,33 @@ button:active {
   overflow: hidden;
   transition: 0.3s;
   background-color: white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /* Project 1 */
 #aCode1 {
   background-image: url("images/ArticlePreview-Code.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: #0d1117;
 }
 #aPage1 {
   background-image: url("images/ArticlePreview-LiveSite.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: #ecf2f9;
 }
 #aRead1 {
   background-image: url("images/ArticlePreview-README.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: #0d1117;
 }
-#aCode2,
-#aPage2,
 #aRead2 {
   background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
-  background-position: center;
-  background-size: contain;
+}
+#aCode2 {
+  background-image: url("images/PersonalPortfolio-Code.png");
+  background-color: #0d1117;
+}
+#aPage2 {
+  background-image: url("images/PersonalPortfolio-LiveSite.png");
+  background-color: black;
 }
 #aCode3,
 #aPage3,
