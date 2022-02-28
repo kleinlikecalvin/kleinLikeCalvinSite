@@ -256,7 +256,7 @@ button:active {
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s;
-  background-color: white;
+  background-color: #0d1117;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -268,7 +268,6 @@ button:active {
 /* Project 1 */
 #aCode1 {
   background-image: url("images/ArticlePreview-Code.png");
-  background-color: #0d1117;
 }
 #aPage1 {
   background-image: url("images/ArticlePreview-LiveSite.png");
@@ -276,27 +275,24 @@ button:active {
 }
 #aRead1 {
   background-image: url("images/ArticlePreview-README.png");
-  background-color: #0d1117;
 }
 /* Project 2 */
 #aCode2,
 #aPage2,
 #aRead2 {
+  background-color: white;
   background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
-  background-position: center;
-  background-size: contain;
 }
 /* Project 3 */
-#aRead3 {
-  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
-}
 #aCode3 {
   background-image: url("images/PersonalPortfolio-Code.png");
-  background-color: #0d1117;
 }
 #aPage3 {
   background-image: url("images/PersonalPortfolio-LiveSite.png");
   background-color: black;
+}
+#aRead3 {
+  background-image: url("images/PersonalPortfolio-README.png");
 }
 /* LET'S BE FRIENDS SECTION */
 .addMe {
