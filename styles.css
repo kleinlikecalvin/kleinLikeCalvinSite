@@ -184,7 +184,7 @@ section {
   margin: 10px;
 }
 .profileImgCont {
-  background-image: url(images/IMG_5247.jpg);
+  background-image: url(images/MyFace.jpg);
   height: 400px;
   width: 300px;
   background-size: cover;
@@ -331,6 +331,10 @@ button:active {
   }
   h2 {
     line-height: 28px;
+  }
+  /* LANDING */
+  .landingCont {
+    justify-content: space-evenly;
   }
   /* ABOUT ME */
   .wrapper {
