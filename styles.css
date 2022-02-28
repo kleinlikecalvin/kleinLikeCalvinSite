@@ -95,7 +95,6 @@ section {
   color: var(--green);
   border-right: 0.15em solid var(--green); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: blink-caret 0.4s step-end infinite;
 }
 @keyframes blink-caret {
@@ -104,7 +103,7 @@ section {
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: var(--green);
   }
 }
 /* NEXT SECTION ARROWS */
