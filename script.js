@@ -1,6 +1,5 @@
 const hello = document.getElementById("hello");
 const speed = 1000;
-let u = 0;
 
 const greetings = [
   "Hello World",
