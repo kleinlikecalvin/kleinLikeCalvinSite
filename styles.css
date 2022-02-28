@@ -36,8 +36,9 @@ nav {
   padding-left: 10px;
 }
 .collapsableMenu .fa-hamburger {
+  margin-top: 2px;
   color: var(--green);
-  font-size: 40px;
+  font-size: 35px;
   transition: 0.5s;
 }
 .collapsableMenu .fa-hamburger:hover {
