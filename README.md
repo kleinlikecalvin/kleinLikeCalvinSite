@@ -22,6 +22,7 @@ I learned how to use scroll-behavior, setInterval(), dabbled with keyframes, and
 
 - HTML
 - CSS
+- JS
 - Flex
 - Desktop to mobile workflow
 
