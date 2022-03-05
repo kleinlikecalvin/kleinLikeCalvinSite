@@ -277,11 +277,15 @@ button:active {
   background-image: url("images/ArticlePreview-README.png");
 }
 /* Project 2 */
-#aCode2,
-#aPage2,
-#aRead2 {
+#aCode2 {
+  background-image: url("images/Login-Code.png");
+}
+#aPage2 {
+  background-image: url("images/Login-LiveSite.png");
   background-color: white;
-  background-image: url("https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png");
+}
+#aRead2 {
+  background-image: url("images/Login-README.png");
 }
 /* Project 3 */
 #aCode3 {
@@ -302,6 +306,7 @@ button:active {
   text-decoration: none;
   color: black;
 }
+
 /* TO TOP HREF */
 .fa-chevron-up {
   font-size: 40px;
@@ -362,6 +367,9 @@ button:active {
     flex-direction: column;
   }
   .addMe h2 {
+    text-align: center;
+  }
+  .addMe a {
     text-align: center;
   }
   .addMe button {
