@@ -278,14 +278,14 @@ button:active {
 }
 /* Project 2 */
 #aCode2 {
-  background-image: url("images/Login-Code.png");
+  background-image: url("images/dice-Code.png");
 }
 #aPage2 {
-  background-image: url("images/Login-LiveSite.png");
+  background-image: url("images/dice-LiveSite.png");
   background-color: white;
 }
 #aRead2 {
-  background-image: url("images/Login-README.png");
+  background-image: url("images/dice-README.png");
 }
 /* Project 3 */
 #aCode3 {
