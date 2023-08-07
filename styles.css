@@ -210,3 +210,15 @@ a {
 .add-me .main-container {
   justify-content: space-evenly;
 }
+@media (max-width: 767px) {
+  .portrait {
+    float: right;
+    margin-right: 0;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 115px;
+  }
+  .project {
+    gap: 20px;
+  }
+}
