@@ -1,220 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/edc2ca84e9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/edc2ca84e9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>N. Klein</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="logoCont">
-            <img src="images/NKLogo.PNG" alt="" id="logo">
-        </div>
-        <div class="collapsableMenu">
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <i class="fas fa-hamburger"></i>
-            </label>
-            <div class="menuContent">
-                <ul>
-                    <li>
-                        <a href="#aboutMeSection">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#mySkillsSection">My Skills</a>
-                    </li>
-                    <li>
-                        <a href="#p1Section">Project 1</a>
-                    </li>
-                    <li>
-                        <a href="#p2Section">Project 2</a>
-                    </li>
-                    <li>
-                        <a href="#p3Section">Project 3</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <div class="logo-container">
+        <img src="images/nk-logo.PNG" alt="" id="logo" />
+      </div>
+      <div class="collapsible-menu-container">
+        <button id="collapsible-menu-trigger" class="collapsible-menu-trigger">
+          <i class="fas fa-hamburger"></i>
+        </button>
+        <ul
+          id="collapsible-menu-content"
+          class="collapsible-menu-content hidden"
+        >
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projectOne">Project 1</a>
+          </li>
+          <li>
+            <a href="#projectTwo">Project 2</a>
+          </li>
+          <li>
+            <a href="#projectThree">Project 3</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    
-    <section id="helloWorldSection">
-        <div class="landingCont">
-            <div id="helloCont">
-                <h1 id="hello">Hello World</h1>
-            </div>
-            <div class="nextBtnCont">
-                <a href="#aboutMeSection" id="nextSectionBtn">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
+    <section class="landing-container">
+      <h1 id="hello">Hello World</h1>
+      <a href="#about" class="next-btn">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="main-container about-me col">
+        <p>
+          <img
+            src="images/my-face.jpg"
+            class="portrait"
+            alt="Nikki Klein Portrait"
+            height="200"
+            width="150"
+          />
+          Nikki Klein is an adaptable and positive individual with strong
+          communication skills and has the ability to learn and retain new
+          technology quickly. She&apos;s highly detail-oriented, manages time
+          well, and is self-sufficient. She has gained praise for her patience,
+          personability, fast learning, and organizational skills n previous
+          positions, and in her current role.
+        </p>
+        <p>
+          She enjoys learning new languages (coding and spoken). She&apos;s a
+          native English speaker, advanced with French, understands a good
+          amount of Italian and Spanish, and is a beginner with German and
+          Japanese.
+        </p>
+        <p>
+          Nikki is open to new opportunities, especially those working with
+          technologies such as React, Svelte, and Next.JS!
+        </p>
+        <div class="add-me">
+          <a
+            href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/"
+            class="button"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Read More On LinkedIn</a
+          >
         </div>
+      </div>
+      <a href="#skills" class="next-btn">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
-    <section id="aboutMeSection">          
-        <h2>About Me</h2> 
-        <div class="wrapper">
-            <div class="container aboutMeCont">
-                <div class="aboutMe">
-                    <p>
-                        I'm a person that loves fun times, cats, and adventures with friends. In the beginning of 2021, I helped found a nonprofit in my hometown to support and mentor at-risk youth. Our name is <a href="https://www.AnaheimYoutopia.com" target="_blank" rel="noreferrer noopener">Anaheim Youtopia</a> (AY)! Currently, I'm the Exectuive Director and Treasurer of AY in my spare time. I also love learning languages (which is how I got started in front-end software development)! Since 2017, I've been studying five spoken languages:
-                        <ul>
-                            <li>French</li>
-                            <li>Spanish</li>
-                            <li>German</li>
-                            <li>Italian</li>
-                            <li>Japanese</li>
-                        </ul>  
-                    </p>
-                </div>
-            </div>
-            <div class="col profImgTextCont">
-                <div class="textCont">
-                    <p><i class="fas fa-hand-point-left"></i> That's my face!</p>
-                </div>
-                <div class="profileImgCont"></div>
-            </div>   
-        </div>
-        <div class="nextBtnCont">
-            <a href="#mySkillsSection" id="nextSectionBtn">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>    
+    <section id="skills">
+      <h2>My Coding Skills</h2>
+      <div class="main-container skills">
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>Javascript</button>
+        <button>React/JSX</button>
+        <button>jQuery</button>
+        <button>Node.js</button>
+        <button>Bootstrap</button>
+        <button>Java</button>
+        <button>Git / GitHub</button>
+        <button>npm</button>
+        <button>JAVA</button>
+        <button>Slack</button>
+        <button>SASS / SCSS</button>
+        <button>Gulp</button>
+        <button>Express.js</button>
+        <button>Salesforce Commerce Cloud</button>
+        <button>Pixlee</button>
+        <button>REST API</button>
+        <button>Ajax</button>
+        <button>Axios</button>
+        <button>Responsive Web Design</button>
+        <button>ADA / a11y</button>
+        <button>VS Code</button>
+        <button>Eclipse</button>
+      </div>
+      <a href="#projectOne" class="next-btn">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
-    <section id="mySkillsSection">
-        <h2>My Coding Skills</h2>
-        <div class="container mySkillsCont col">
-            <div class="confettiBtnsCont">
-                <button class="confettiBtn" id="confettiBtn1">HTML</button>
-                <button class="confettiBtn" id="confettiBtn2">CSS</button>
-                <button class="confettiBtn" id="confettiBtn3">Javascript</button>
-                <button class="confettiBtn" id="confettiBtn4">React/JSX</button>
-                <button class="confettiBtn" id="confettiBtn5">jQuery</button>
-                <button class="confettiBtn" id="confettiBtn6">Node.js</button>
-                <button class="confettiBtn" id="confettiBtn7">Bootstrap</button>
-                <button class="confettiBtn" id="confettiBtn8">Java</button>
-                <button class="confettiBtn" id="confettiBtn9">Git / GitHub</button>
-                <button class="confettiBtn" id="confettiBtn10">npm</button>
-                <button class="confettiBtn" id="confettiBtn11">JAVA</button>
-                <button class="confettiBtn" id="confettiBtn12">Slack</button>
-                <button class="confettiBtn" id="confettiBtn13">SASS / SCSS</button>
-                <button class="confettiBtn" id="confettiBtn14">Gulp</button>
-                <button class="confettiBtn" id="confettiBtn15">Express.js</button>
-                <button class="confettiBtn" id="confettiBtn16">Salesforce Commerce Cloud</button>
-                <button class="confettiBtn" id="confettiBtn17">Pixlee</button>
-                <button class="confettiBtn" id="confettiBtn18">REST API</button>
-                <button class="confettiBtn" id="confettiBtn19">Ajax</button>
-                <button class="confettiBtn" id="confettiBtn20">Axios</button>
-                <button class="confettiBtn" id="confettiBtn21">Responsive Web Design</button>
-                <button class="confettiBtn" id="confettiBtn22">ADA / a11y</button>
-                <button class="confettiBtn" id="confettiBtn23">VS Code</button>
-                <button class="confettiBtn" id="confettiBtn24">Eclipse</button>
-            </div>
-        </div>
-        <div class="nextBtnCont">
-            <a href="#p1Section" id="nextSectionBtn">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>    
+    <section id="projectOne">
+      <h2>Tic Tac Toe</h2>
+      <div class="main-container project">
+        <a
+          href="https://github.com/kleinlikecalvin/tic-tac-toe"
+          class="col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="images/tic-tac-toe-code.png"
+            alt="code snippet"
+            height="250"
+            width="250"
+          />
+          <button>View Code</button></a
+        >
+        <a
+          href="https://kleinlikecalvin.github.io/tic-tac-toe/"
+          class="col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="images/tic-tac-toe-live-site.png"
+            alt="screenshot of page"
+            height="250"
+            width="250"
+          />
+          <button>View Page</button></a
+        >
+      </div>
+      <a href="#projectTwo" class="next-btn">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
-    <section id="p1Section">
-        <h2>Article Preview Component</h2>
-        <div class="container allProjectConts p1">
-            <div class="gitHubCodeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/articlePreviewComponent" target="_blank" rel="noreferrer noopener" class="aImg" id="aCode1"></a>
-                <button><a href="https://github.com/kleinlikecalvin/articlePreviewComponent" target="_blank" rel="noreferrer noopener">View Code</a></button>
-            </div>
-            <div class="gitHubPageCont projectCont col">
-                <a href="https://kleinlikecalvin.github.io/articlePreviewComponent/" class="aImg" id="aPage1" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://kleinlikecalvin.github.io/articlePreviewComponent/" target="_blank" rel="noreferrer noopener">View Page</a></button>
-            </div>
-            <div class="gitHubReadMeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/articlePreviewComponent/blob/main/README.md" class="aImg" id="aRead1" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://github.com/kleinlikecalvin/articlePreviewComponent/blob/main/README.md" target="_blank" rel="noreferrer noopener">View ReadMe</a></button>
-            </div>
-        </div>
-        <div class="nextBtnCont">
-            <a href="#p2Section" id="nextSectionBtn">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
+    <section id="projectTwo">
+      <h2>Dice Roll Interview Question</h2>
+      <div class="main-container project">
+        <a
+          href="https://github.com/kleinlikecalvin/dice-interview-question"
+          class="container col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="images/dice-code.png"
+            alt="code snippet"
+            height="250"
+            width="250"
+          />
+          <button>View Code</button></a
+        >
+        <a
+          href="https://kleinlikecalvin.github.io/dice-interview-question/"
+          class="col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="images/dice-live-site.png"
+            alt="screenshot of page"
+            height="250"
+            width="250"
+          />
+          <button>View Page</button></a
+        >
+      </div>
+      <div class="next-btn-container">
+        <a href="#projectThree" class="next-btn">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </section>
 
-    <section id="p2Section">
-        <h2>Dice Roll Interview Question</h2>
-        <div class="container allProjectConts p2">
-            <div class="gitHubCodeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/dice-interview-question" class="aImg" id="aCode2" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://github.com/kleinlikecalvin/dice-interview-question" target="_blank" rel="noreferrer noopener">View Code</a></button>
-            </div>
-            <div class="gitHubPageCont projectCont col">
-                <a href="https://kleinlikecalvin.github.io/dice-interview-question/" class="aImg" id="aPage2" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://kleinlikecalvin.github.io/dice-interview-question/" target="_blank" rel="noreferrer noopener">View Page</a></button>
-            </div>
-            <div class="gitHubReadMeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/dice-interview-question#readme" class="aImg" id="aRead2" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://github.com/kleinlikecalvin/dice-interview-question#readme" target="_blank" rel="noreferrer noopener">View ReadMe</a></button>
-            </div>
-        </div>
-        <div class="nextBtnCont">
-            <a href="#p3Section" id="nextSectionBtn">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
+    <section id="projectThree">
+      <h2>Number Gamble Game</h2>
+      <div class="main-container project">
+        <a
+          href="https://github.com/kleinlikecalvin/numberGamble"
+          class="col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="images/number-game-code.png"
+            alt="code snippet"
+            height="250"
+            width="250"
+          />
+          <button>View Code</button></a
+        >
+        <a
+          href="https://kleinlikecalvin.github.io/numberGamble/"
+          class="col"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <div class="image-container"></div>
+          <button>View Page</button></a
+        >
+      </div>
+      <div class="next-btn-container">
+        <a href="#add-me" class="next-btn">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </section>
-
-    <section id="p3Section">
-        <h2>Number Gamble Game</h2>
-        <div class="container allProjectConts p3">
-            <div class="gitHubCodeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/numberGamble" class="aImg" id="aCode3" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://github.com/kleinlikecalvin/numberGamble" target="_blank" rel="noreferrer noopener">View Code</a></button>
-            </div>
-            <div class="gitHubPageCont projectCont col">
-                <a href="https://kleinlikecalvin.github.io/numberGamble/" class="aImg" id="aPage3" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://kleinlikecalvin.github.io/numberGamble/" target="_blank" rel="noreferrer noopener">View Page</a></button>
-            </div>
-            <div class="gitHubReadMeCont projectCont col">
-                <a href="https://github.com/kleinlikecalvin/numberGamble/blob/main/README.md" class="aImg" id="aRead3" target="_blank" rel="noreferrer noopener"></a>
-                <button><a href="https://github.com/kleinlikecalvin/numberGamble/blob/main/README.md" target="_blank" rel="noreferrer noopener">View ReadMe</a></button>
-            </div>
-        </div>
-        <div class="nextBtnCont">
-            <a href="#addMe" id="nextSectionBtn">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
+    <section id="add-me" class="add-me">
+      <h2>Let's be friends!</h2>
+      <div class="main-container">
+        <a
+          href="https://github.com/kleinlikecalvin"
+          class="button"
+          target="_blank"
+          rel="noreferrer noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/"
+          class="button"
+          target="_blank"
+          rel="noreferrer noopener"
+          >LinkedIn</a
+        >
+        <a
+          href="https://www.codewars.com/users/str33tlightkids"
+          class="button"
+          target="_blank"
+          rel="noreferrer noopener"
+          >CodeWars</a
+        >
+      </div>
     </section>
-    <section id="addMe">
-        <div class="container addMe">
-            <h2>Let's be friends!</h2>
-            <a href="https://www.codewars.com/users/str33tlightkids" target="_blank" rel="noreferrer noopener"><button id="codeWarsBtn">CodeWars</button></a>
-            <a href="https://github.com/kleinlikecalvin" target="_blank"><button id="gitHubBtn">GitHub</button></a>
-            <a href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/" target="_blank"><button id="linkedInBtn">LinkedIn</button></a>
-        </div>
-    </section>
-    <a href="#" id="toTop"><i class="fas fa-chevron-up"></i> Beam me up Scotty!</a>
+    <a href="#" class="next-btn"
+      ><i class="fas fa-chevron-up"></i> Beam me up Scotty!</a
+    >
 
     <!-- Confetti -->
     <script src="https://www.wpromotions.eu/confetti.min.js"></script>
     <script src="confetti.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

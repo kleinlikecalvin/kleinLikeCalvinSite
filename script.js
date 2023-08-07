@@ -17,7 +17,6 @@ const greetings = [
   acc.push(curr);
   return acc;
 }, []);
-console.log(greetings);
 
 let typewriterIndex = 0;
 function typewriter() {
@@ -26,3 +25,13 @@ function typewriter() {
 }
 
 setInterval(typewriter, 200);
+
+const menuTrigger = document.getElementById("collapsible-menu-trigger");
+const menuContent = document.getElementById("collapsible-menu-content");
+menuTrigger.addEventListener("click", () => {
+  if (menuContent.classList.contains("hidden")) {
+    menuContent.classList.remove("hidden");
+  } else {
+    menuContent.classList.add("hidden");
+  }
+});
