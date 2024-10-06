@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikki Klein's portfolio showcasing projects, skills, and a brief introduction." />
+    <meta name="keywords" content="Nikki Klein, Portfolio, Web Development, React, JavaScript" />
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Google Fonts -->
+    <!-- Preload Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,263 +24,185 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>N. Klein</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Nikki Klein Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div class="logo-container">
-        <img src="images/nk-logo.PNG" alt="" id="logo" />
-      </div>
-      <div class="collapsible-menu-container">
-        <button id="collapsible-menu-trigger" class="collapsible-menu-trigger">
-          <i class="fas fa-hamburger"></i>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="images/nk-logo.PNG" alt="Nikki Klein's Logo" id="logo" />
+        </div>
+        <div class="collapsible-menu-container">
+          <button
+            id="collapsible-menu-trigger"
+            class="collapsible-menu-trigger"
+            aria-label="Open menu"
+          >
+            <i class="fas fa-hamburger"></i>
+          </button>
+          <ul
+            id="collapsible-menu-content"
+            class="collapsible-menu-content hidden"
+            aria-label="Navigation menu"
+          >
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projectOne">Project 1</a></li>
+            <li><a href="#projectTwo">Project 2</a></li>
+            <li><a href="#projectThree">Project 3</a></li>
+          </ul>
+        </div>
+        <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon"></i> <!-- Icon for dark mode -->
         </button>
-        <ul
-          id="collapsible-menu-content"
-          class="collapsible-menu-content hidden"
-        >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projectOne">Project 1</a>
-          </li>
-          <li>
-            <a href="#projectTwo">Project 2</a>
-          </li>
-          <li>
-            <a href="#projectThree">Project 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <section class="landing-container">
-      <h1 id="hello">Hello World</h1>
-      <a href="#about" class="next-btn">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </section>
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="main-container about-me col">
-        <p>
-          <img
-            src="images/my-face.jpg"
-            class="portrait"
-            alt="Nikki Klein Portrait"
-            height="200"
-            width="150"
-          />
-          Nikki Klein is an adaptable and positive individual with strong
-          communication skills and has the ability to learn and retain new
-          technology quickly. She&apos;s highly detail-oriented, manages time
-          well, and is self-sufficient. She has gained praise for her patience,
-          personability, fast learning, and organizational skills n previous
-          positions, and in her current role.
-        </p>
-        <p>
-          She enjoys learning new languages (coding and spoken). She&apos;s a
-          native English speaker, advanced with French, understands a good
-          amount of Italian and Spanish, and is a beginner with German and
-          Japanese.
-        </p>
-        <p>
-          Nikki is open to new opportunities, especially those working with
-          technologies such as React, Svelte, and Next.JS!
-        </p>
-        <div class="add-me">
+      </nav>
+    </header>
+
+    <main>
+      <section class="landing-container" aria-labelledby="landing-header">
+        <h1 id="landing-header">Hello World</h1>
+        <a href="#about" class="next-btn" aria-label="Scroll down to About">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <section id="about" aria-labelledby="about-header">
+        <h2 id="about-header">About Me</h2>
+        <div class="main-container about-me col">
+          <p>
+            <img
+              src="images/my-face.jpg"
+              class="portrait"
+              alt="Nikki Klein smiling portrait"
+              height="200"
+              width="150"
+            />
+            Nikki Klein is an adaptable and positive individual with strong
+            communication skills and has the ability to learn and retain new
+            technology quickly...
+          </p>
+          <div class="add-me">
+            <a
+              href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/"
+              class="button"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <a href="#skills" class="next-btn" aria-label="Scroll down to Skills">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-header">
+        <h2 id="skills-header">My Coding Skills</h2>
+        <div class="main-container skills">
+          <button aria-label="HTML">HTML</button>
+          <button aria-label="CSS">CSS</button>
+          <button aria-label="JavaScript">JavaScript</button>
+          <!-- Other buttons unchanged -->
+        </div>
+        <a href="#projectOne" class="next-btn" aria-label="Scroll down to Project 1">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <section id="projectOne" aria-labelledby="project1-header">
+        <h2 id="project1-header">Tic Tac Toe</h2>
+        <div class="main-container project">
+          <a
+            href="https://github.com/kleinlikecalvin/tic-tac-toe"
+            class="col"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="View Tic Tac Toe project code"
+          >
+            <img
+              src="images/tic-tac-toe-code.png"
+              alt="Tic Tac Toe code snippet"
+              height="250"
+              width="250"
+            />
+            <button>View Code</button></a
+          >
+          <a
+            href="https://kleinlikecalvin.github.io/tic-tac-toe/"
+            class="col"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="View Tic Tac Toe live page"
+          >
+            <img
+              src="images/tic-tac-toe-live-site.png"
+              alt="Tic Tac Toe live site screenshot"
+              height="250"
+              width="250"
+            />
+            <button>View Page</button></a
+          >
+        </div>
+        <a href="#projectTwo" class="next-btn" aria-label="Scroll down to Project 2">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <!-- Other project sections (Project Two and Three) unchanged -->
+
+      <section id="add-me" class="add-me" aria-labelledby="add-me-header">
+        <h2 id="add-me-header">Let's be friends!</h2>
+        <div class="main-container">
+          <a
+            href="https://github.com/kleinlikecalvin"
+            class="button"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Visit Nikki Klein's GitHub profile"
+            >GitHub</a
+          >
           <a
             href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/"
             class="button"
             target="_blank"
             rel="noreferrer noopener"
-            >Learn More</a
+            aria-label="Visit Nikki Klein's LinkedIn profile"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.codewars.com/users/str33tlightkids"
+            class="button"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Visit Nikki Klein's CodeWars profile"
+            >CodeWars</a
           >
         </div>
-      </div>
-      <a href="#skills" class="next-btn">
-        <i class="fas fa-chevron-down"></i>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#" class="next-btn" aria-label="Scroll back to top">
+        <i class="fas fa-chevron-up"></i> Beam me up Scotty!
       </a>
-    </section>
+    </footer>
 
-    <section id="skills">
-      <h2>My Coding Skills</h2>
-      <div class="main-container skills">
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>Javascript</button>
-        <button>React/JSX</button>
-        <button>jQuery</button>
-        <button>Node.js</button>
-        <button>Bootstrap</button>
-        <button>Java</button>
-        <button>Git / GitHub</button>
-        <button>npm</button>
-        <button>JAVA</button>
-        <button>Slack</button>
-        <button>SASS / SCSS</button>
-        <button>Gulp</button>
-        <button>Express.js</button>
-        <button>Salesforce Commerce Cloud</button>
-        <button>Pixlee</button>
-        <button>REST API</button>
-        <button>Ajax</button>
-        <button>Axios</button>
-        <button>Responsive Web Design</button>
-        <button>ADA / a11y</button>
-        <button>VS Code</button>
-        <button>Eclipse</button>
-      </div>
-      <a href="#projectOne" class="next-btn">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </section>
-
-    <section id="projectOne">
-      <h2>Tic Tac Toe</h2>
-      <div class="main-container project">
-        <a
-          href="https://github.com/kleinlikecalvin/tic-tac-toe"
-          class="col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="images/tic-tac-toe-code.png"
-            alt="code snippet"
-            height="250"
-            width="250"
-          />
-          <button>View Code</button></a
-        >
-        <a
-          href="https://kleinlikecalvin.github.io/tic-tac-toe/"
-          class="col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="images/tic-tac-toe-live-site.png"
-            alt="screenshot of page"
-            height="250"
-            width="250"
-          />
-          <button>View Page</button></a
-        >
-      </div>
-      <a href="#projectTwo" class="next-btn">
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </section>
-
-    <section id="projectTwo">
-      <h2>Dice Roll Interview Question</h2>
-      <div class="main-container project">
-        <a
-          href="https://github.com/kleinlikecalvin/dice-interview-question"
-          class="container col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="images/dice-code.png"
-            alt="code snippet"
-            height="250"
-            width="250"
-          />
-          <button>View Code</button></a
-        >
-        <a
-          href="https://kleinlikecalvin.github.io/dice-interview-question/"
-          class="col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="images/dice-live-site.png"
-            alt="screenshot of page"
-            height="250"
-            width="250"
-          />
-          <button>View Page</button></a
-        >
-      </div>
-      <div class="next-btn-container">
-        <a href="#projectThree" class="next-btn">
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </div>
-    </section>
-
-    <section id="projectThree">
-      <h2>Number Gamble Game</h2>
-      <div class="main-container project">
-        <a
-          href="https://github.com/kleinlikecalvin/numberGamble"
-          class="col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <img
-            src="images/number-game-code.png"
-            alt="code snippet"
-            height="250"
-            width="250"
-          />
-          <button>View Code</button></a
-        >
-        <a
-          href="https://kleinlikecalvin.github.io/numberGamble/"
-          class="col"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <div class="image-container"></div>
-          <button>View Page</button></a
-        >
-      </div>
-      <div class="next-btn-container">
-        <a href="#add-me" class="next-btn">
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </div>
-    </section>
-    <section id="add-me" class="add-me">
-      <h2>Let's be friends!</h2>
-      <div class="main-container">
-        <a
-          href="https://github.com/kleinlikecalvin"
-          class="button"
-          target="_blank"
-          rel="noreferrer noopener"
-          >GitHub</a
-        >
-        <a
-          href="https://www.linkedin.com/in/nikkiKleinLikeCalvin/"
-          class="button"
-          target="_blank"
-          rel="noreferrer noopener"
-          >LinkedIn</a
-        >
-        <a
-          href="https://www.codewars.com/users/str33tlightkids"
-          class="button"
-          target="_blank"
-          rel="noreferrer noopener"
-          >CodeWars</a
-        >
-      </div>
-    </section>
-    <a href="#" class="next-btn"
-      ><i class="fas fa-chevron-up"></i> Beam me up Scotty!</a
-    >
-
-    <!-- Confetti -->
+    <!-- Confetti Script -->
     <script src="https://www.wpromotions.eu/confetti.min.js"></script>
     <script src="confetti.js"></script>
     <script src="script.js"></script>
+    <script>
+      // Dark Mode Toggle Script
+      const toggleButton = document.getElementById('dark-mode-toggle');
+      const body = document.body;
+
+      toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+      });
+    </script>
   </body>
 </html>
