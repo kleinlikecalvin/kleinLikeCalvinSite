@@ -6,6 +6,7 @@
   color: var(--green);
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #0f1819;
   line-height: 25px;
@@ -14,17 +15,61 @@ body {
   margin: 0 auto;
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a2e;
+  color: #e5e5e5; /* Adjusted text color for dark mode */
+}
+
+body.dark-mode a,
+body.dark-mode p,
+body.dark-mode li {
+  color: #e5e5e5;
+}
+
+body.dark-mode nav,
+body.dark-mode .collapsible-menu-trigger,
+body.dark-mode .collapsible-menu-content a {
+  color: #e5e5e5;
+}
+
+body.dark-mode .main-container {
+  border-color: #f0a500; /* Brighter border for contrast in dark mode */
+  box-shadow: 10px 10px #e5e5e5; /* Light shadow for dark background */
+}
+
+body.dark-mode .button,
+body.dark-mode .project button {
+  background-color: #f0a500; /* Brighter button for dark mode */
+  color: #1a1a2e;
+}
+
+body.dark-mode .next-btn .fa-chevron-down,
+body.dark-mode .next-btn .fa-chevron-up {
+  color: #f0a500; /* Lighter arrows in dark mode */
+}
+
+body.dark-mode .collapsible-menu-trigger:hover,
+body.dark-mode .collapsible-menu-content a:hover,
+body.dark-mode .next-btn:hover .fa-chevron-down,
+body.dark-mode .next-btn:hover .fa-chevron-up {
+  color: #ffffff; /* Pure white hover color for dark mode */
+}
+
 /* NAV */
 nav {
   display: flex;
   justify-content: space-between;
 }
+
 .logo-container img {
   max-width: 100px;
 }
+
 .collapsible-menu-container {
   text-align: right;
 }
+
 .collapsible-menu-trigger {
   background: none;
   border: none;
@@ -34,20 +79,24 @@ nav {
   font-family: var(--font);
   transition: 0.5s;
 }
+
 .collapsible-menu-trigger:hover {
   color: white;
   transition: 0.5s;
   cursor: pointer;
 }
+
 .collapsible-menu-content {
   list-style: none;
   margin-top: 10px;
 }
+
 .collapsible-menu-content a {
   text-decoration: none;
   color: var(--green);
   transition: 0.5s;
 }
+
 .collapsible-menu-content a:hover {
   color: white;
   transition: 0.5s;
@@ -66,6 +115,7 @@ nav {
   flex-direction: column;
   justify-content: space-around;
 }
+
 #hello {
   color: var(--green);
   border-right: 0.15em solid var(--green); /* The typwriter cursor */
@@ -74,6 +124,7 @@ nav {
   width: 280px;
   text-align: center;
 }
+
 @keyframes blink-caret {
   from,
   to {
@@ -88,9 +139,11 @@ nav {
 section {
   margin: 10% 0 10% 0;
 }
+
 .hidden {
   visibility: hidden;
 }
+
 .main-container {
   display: flex;
   border-radius: 10px;
@@ -102,6 +155,7 @@ section {
   justify-content: center;
   box-shadow: 10px 10px white;
 }
+
 .col {
   display: flex;
   flex-direction: column;
@@ -127,12 +181,14 @@ a {
   align-items: center;
   box-shadow: 0 4px white;
 }
+
 .button:hover,
 .project button:hover {
   background-color: rgb(93, 131, 57);
   cursor: pointer;
   transition: 0.5s;
 }
+
 .button:active,
 .project button:active {
   background-color: var(--green);
@@ -151,16 +207,19 @@ a {
   transition-timing-function: ease-out;
   color: var(--green);
 }
+
 .next-btn .fa-chevron-down,
 .next-btn .fa-chevron-up {
   font-size: 40px;
   transition: 0.5s;
 }
+
 .next-btn .fa-chevron-down:hover,
 .next-btn .fa-chevron-up:hover {
   color: white;
   transition: 0.5s;
 }
+
 .next-btn:hover,
 .next-btn:focus,
 .next-btn:active {
@@ -171,6 +230,7 @@ a {
 .about-me {
   padding-top: 10px;
 }
+
 .portrait {
   float: left;
   margin-right: 20px;
@@ -187,16 +247,19 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+
 .project .col {
   height: 325px;
   justify-content: space-between;
   transition: 0.5s;
   text-align: center;
 }
+
 .project .col:hover {
   transform: scale(110%);
   transition: 0.5s;
 }
+
 #projectThree .image-container {
   background: url(images/number-game-live-site.png);
   background-repeat: no-repeat;
@@ -210,6 +273,7 @@ a {
 .add-me .main-container {
   justify-content: space-evenly;
 }
+
 @media (max-width: 767px) {
   .portrait {
     float: right;
@@ -218,6 +282,7 @@ a {
     height: 150px;
     width: 115px;
   }
+
   .project {
     gap: 20px;
   }
