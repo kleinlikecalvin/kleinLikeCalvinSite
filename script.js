@@ -1,3 +1,4 @@
+// Hello Typewriter
 const hello = document.getElementById("hello");
 const speed = 1000;
 
@@ -26,12 +27,21 @@ function typewriter() {
 
 setInterval(typewriter, 200);
 
+// Menu Trigger
 const menuTrigger = document.getElementById("collapsible-menu-trigger");
 const menuContent = document.getElementById("collapsible-menu-content");
-menuTrigger.addEventListener("click", () => {
+const menuLinks = menuContent.querySelectorAll("a");
+
+function toggleMenu() {
+  console.log("click");
   if (menuContent.classList.contains("hidden")) {
     menuContent.classList.remove("hidden");
   } else {
     menuContent.classList.add("hidden");
   }
+}
+
+menuTrigger.addEventListener("click", toggleMenu);
+menuLinks.forEach((link) => {
+  link.addEventListener("click", toggleMenu);
 });
