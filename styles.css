@@ -24,6 +24,7 @@ nav {
 }
 .collapsible-menu-container {
   text-align: right;
+  position: relative;
 }
 .collapsible-menu-trigger {
   background: none;
@@ -41,7 +42,10 @@ nav {
 }
 .collapsible-menu-content {
   list-style: none;
-  margin-top: 10px;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  width: max-content;
 }
 .collapsible-menu-content a {
   text-decoration: none;
@@ -89,7 +93,7 @@ section {
   margin: 10% 0 10% 0;
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 .main-container {
   display: flex;
