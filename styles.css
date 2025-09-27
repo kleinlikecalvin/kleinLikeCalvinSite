@@ -171,11 +171,6 @@ a {
 .about-me {
   padding-top: 10px;
 }
-.portrait {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
 
 /* SKILLS SECTION */
 .skills button {
@@ -197,27 +192,12 @@ a {
   transform: scale(110%);
   transition: 0.5s;
 }
-#projectThree .image-container {
-  background: url(images/number-game-live-site.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 250px;
-  width: 250px;
-}
 
 /* ADD ME */
 .add-me .main-container {
   justify-content: space-evenly;
 }
 @media (max-width: 767px) {
-  .portrait {
-    float: right;
-    margin-right: 0;
-    margin-bottom: 10px;
-    height: 150px;
-    width: 115px;
-  }
   .project {
     gap: 20px;
   }
