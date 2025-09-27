@@ -7,10 +7,13 @@
   scroll-behavior: smooth;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   background-color: #0f1819;
   line-height: 25px;
   max-width: 1000px;
-  padding: 10px 10px 30px;
+  padding: 30px;
   margin: 0 auto;
 }
 
@@ -72,7 +75,7 @@ nav {
 }
 #hello {
   color: var(--green);
-  border-right: 0.15em solid var(--green); /* The typwriter cursor */
+  border-right: 0.15em solid var(--green); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: blink-caret 0.4s step-end infinite;
   width: 280px;
@@ -89,8 +92,9 @@ nav {
 }
 
 /* GENERAL */
-section {
-  margin: 10% 0 10% 0;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 .hidden {
   display: none;
@@ -100,20 +104,15 @@ section {
   border-radius: 10px;
   border: 3px solid var(--green);
   padding: 30px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   box-shadow: 10px 10px white;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
+  display: block;
 }
 
 /* BUTTONS */
@@ -154,6 +153,7 @@ a {
   transition-property: transform;
   transition-timing-function: ease-out;
   color: var(--green);
+  margin-top: 20px;
 }
 .next-btn .fa-chevron-down,
 .next-btn .fa-chevron-up {
@@ -204,5 +204,16 @@ a {
 @media (max-width: 767px) {
   .project {
     gap: 20px;
+  }
+}
+@media (max-width: 1080px) {
+  body {
+    gap: 50px;
+  }
+  .landing-container {
+    margin-top: 20px;
+  }
+  .mobile-hide-next-btn {
+    display: none;
   }
 }
