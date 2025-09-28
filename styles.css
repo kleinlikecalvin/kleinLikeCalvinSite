@@ -72,6 +72,7 @@ nav {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 #hello {
   color: var(--green);
@@ -80,6 +81,8 @@ nav {
   animation: blink-caret 0.4s step-end infinite;
   width: 280px;
   text-align: center;
+  position: absolute;
+  top: 20%;
 }
 @keyframes blink-caret {
   from,
@@ -212,6 +215,11 @@ a {
   }
   .landing-container {
     margin-top: 20px;
+  }
+  #hello {
+    font-size: 18px;
+    width: 200px;
+    top: 26%;
   }
   .mobile-hide-next-btn {
     display: none;
