@@ -74,7 +74,6 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
-  border: solid;
 }
 #hello {
   color: var(--green);
